@@ -14,7 +14,7 @@ st.write("Detect unusual energy consumption using Machine Learning.")
 @st.cache_data
 def load_data():
     url = "https://archive.ics.uci.edu/static/public/235/individual+household+electric+power+consumption.zip"
-    zip_path = "/content/energy_data.zip"
+    zip_path = "/tmp/energy_data.zip"
 
     if not os.path.exists(zip_path):
         urllib.request.urlretrieve(url, zip_path)
